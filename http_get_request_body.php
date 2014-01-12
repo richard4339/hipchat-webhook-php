@@ -1,6 +1,6 @@
 <?php
 /**
- * hipchat-php
+ * hipchat-webhook-php
  * @author Richard Lynskey <richard@mozor.net>
  * @copyright Copyright (c) 2014, Richard Lynskey
  * @license https://fedoraproject.org/wiki/Licensing/Beerware Beerware

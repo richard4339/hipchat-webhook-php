@@ -1,12 +1,12 @@
 <?php
 /**
- * hipchat-php
+ * hipchat-webhook-php
  * @author Richard Lynskey <richard@mozor.net>
  * @copyright Copyright (c) 2014, Richard Lynskey
  * @license https://fedoraproject.org/wiki/Licensing/Beerware Beerware
  * @version 0.1
  *
- * Built 2013-12-31 12:09 CDT by richard
+ * Built 2014-01-12 13:40 CDT by richard
  *
  * ----------------------------------------------------------------------------
  * "THE BEER-WARE LICENSE" (Revision 42):
@@ -48,6 +48,12 @@ class hipchat
                 break;
             case 'room_name':
                 return $this->json->item->room->name;
+                break;
+            case 'mentions':
+                foreach ($this->json->item->message->mentions as $i) {
+                    $output[] = $i->name;
+                }
+                return $output;
                 break;
         }
     }
