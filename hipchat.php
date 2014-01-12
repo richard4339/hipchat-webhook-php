@@ -19,7 +19,7 @@
 
 require "http_get_request_body.php";
 
-class hipchat
+class webhook
 {
 
     private $body;
